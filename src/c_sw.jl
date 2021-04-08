@@ -37,6 +37,11 @@ export main
     io = open(print_output_file,"w")
 
     # Assign Variables from the NetCDF file to a Julia Struct
+    #
+    # Could be written 
+    #
+    # current_state = State(ds)
+    # different_state = State(different_ds)
     assign_variables(ds)
 
 
