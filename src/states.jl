@@ -2,7 +2,7 @@ using OffsetArrays, NCDatasets, Parameters
 
 # Define the contents of the State Struct 
 # The @with_kw "macro" is used to "unpack" the variables when the struct is passed as an argument to functions
-@with_kw struct State{T}
+@with_kw struct State{T, S}
     isd        ::Int32
     ied        ::Int32
     jsd        ::Int32
@@ -30,8 +30,8 @@ using OffsetArrays, NCDatasets, Parameters
     
     rarea      ::T
     rarea_c    ::T
-    sin_sg     ::T
-    cos_sg     ::T
+    sin_sg     ::S
+    cos_sg     ::S
     sina_v     ::T
     cosa_v     ::T
     sina_u     ::T
@@ -49,21 +49,21 @@ using OffsetArrays, NCDatasets, Parameters
     rsin2      ::T
     dxa        ::T
     dya        ::T
-    delpc      ::T
-    delp       ::T
-    ptc        ::T
-    pt         ::T
-    u          ::T
-    v          ::T
-    w          ::T
-    uc         ::T
-    vc         ::T
-    ua         ::T
-    va         ::T
-    wc         ::T
-    ut         ::T
-    vt         ::T
-    divg_d     ::T
+    delpc      ::S
+    delp       ::S
+    ptc        ::S
+    pt         ::S
+    u          ::S
+    v          ::S
+    w          ::S
+    uc         ::S
+    vc         ::S
+    ua         ::S
+    va         ::S
+    wc         ::S
+    ut         ::S
+    vt         ::S
+    divg_d     ::S
 end
 
 # Assign NetCDF variables,dimensions and attributes to the struct
