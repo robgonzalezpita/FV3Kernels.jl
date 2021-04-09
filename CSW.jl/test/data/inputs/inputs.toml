@@ -1,0 +1,37 @@
+# I/O Configuration file
+
+[c_sw_12x24]
+  name = "c_sw_12x24"
+  input_data_dir = "data/inputs"
+  input_file = "../data/inputs/c_sw_12x24.nc"
+  output_data_dir = "Julia/test/data/outputs"
+  output_file = "../data/outputs/c_sw_12x24.nc"
+  log_dir = "test_output"
+  test_out_file = "test/test_output/c_sw_12x24.test.out"
+
+[c_sw_24x24]
+  name = "c_sw_24x24"
+  input_data_dir = "data/inputs"
+  input_file = "../data/inputs/c_sw_24x24.nc"
+  output_data_dir = "Julia/test/data/outputs"
+  output_file = "../data/outputs/c_sw_24x24.nc"
+  log_dir = "test_output"
+  test_out_file = "test/test_output/c_sw_24x24.test.out"
+
+[c_sw_48x24]
+  name = "c_sw_48x24"
+  input_data_dir = "data/inputs"
+  input_file = "../data/inputs/c_sw_48x24.nc"
+  output_data_dir = "Julia/test/data/outputs"
+  output_file = "../data/outputs/c_sw_48x24.nc"
+  log_dir = "test_output"
+  test_out_file = "test/test_output/c_sw_48x24.test.out"
+
+[c_sw_48x48]
+  name = "c_sw_48x48"
+  input_data_dir = "data/inputs"
+  input_file = "../data/inputs/c_sw_48x48.nc"
+  output_data_dir = "Julia/test/data/outputs"
+  output_file = "../data/outputs/c_sw_48x48.nc"
+  log_dir = "test_output"
+  test_out_file = "test/test_output/c_sw_48x48.test.out"
